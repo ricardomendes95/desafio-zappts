@@ -18,7 +18,7 @@ export default function Pokemon() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const { pokemon, isLoading } = useFetchPokemon(Number(id) || 0);
-  console.log(pokemon);
+
   const goBack = () => {
     navigate("/");
   };
